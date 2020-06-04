@@ -4,6 +4,7 @@ function myFirstJSFunction() {
 
 var userName = prompt('Please enter your first name: ');
 var hourNow = prompt('What is the current time? Please use 0-23 ')
+
 var greeting;
 
 if (hourNow >= 18){
@@ -19,4 +20,19 @@ if (hourNow >= 18){
 
 
 return greeting + " " + userName + "!";
+}
+
+/* Going to write a stretch goal function that takes a number and word and returns that word as many times as the number was entered */
+function stretchGoal() {
+var stretchGoal = prompt('Now for a stretch goal, give me a number between 1 and 10: ')
+var string1 = prompt('Give me a short word: ')
+var counter = 1
+var string2 = []
+while (counter <= stretchGoal) {
+ 
+ string2.push(string1)
+ counter++
+}
+return (string2)
+
 }
