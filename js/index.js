@@ -1,3 +1,5 @@
+/* Creating my first JS function. It will ask for name and the current time and return a welcome message based on their name and the time */
+
 function myFirstJSFunction() {
 
 var userName = prompt('Please enter your first name: ');
