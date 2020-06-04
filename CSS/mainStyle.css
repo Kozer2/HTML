@@ -7,8 +7,12 @@
         
         
     }
-     .pic{
+     img {
+         height: 350px;
+         width: 350px;
+         float: left;
          margin: 0px 50px;
+        
      }
     
     header h1 {
