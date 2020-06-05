@@ -10,13 +10,13 @@ var myFirstJSFunction = function() {
 
 
     if (hourNow >= 18){
-        greeting = 'Good Evening'
+        greeting = 'Good Evening';
     } else if (hourNow >= 12 ) {
-        greeting = 'Good Afternoon'
+        greeting = 'Good Afternoon';
     } else if (hourNow >= 0 ) {
-        greeting = 'Good Morning'
+        greeting = 'Good Morning';
     } else {
-        greeting = 'Welcome'
+        greeting = 'Welcome';
     }
     return greeting + " " + userName + "!";
     } 
@@ -29,11 +29,17 @@ var stretchGoal = function() {
     var string1 = prompt('Give me a short word: ');
     var counter = 1;
     var string2 = '';
+    while (stretchGoal > 10 || stretchGoal < 1) {
+        var stretchGoal = prompt('That number is not in the correct range, please enter a number between 1 and 10')
+    }
+
+
     while (counter <= stretchGoal) {
      
      string2 += string1 + '<br>'
      counter++;
     }
+    
     return (string2)
     
     }
